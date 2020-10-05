@@ -1,43 +1,20 @@
 <app-navbar></app-navbar>
-<div class="card" style="width: 18rem;">
-  <div class="gif" *ngFor="let x of repos">
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">Name: {{x.name}}</li>
-      <li class="list-group-item">Description: {{x.description}}</li>
-    </ul>
-  </div>
-</div>
-
-<div class="card card-cascade">
-
-  <!-- Card image -->
 
 
-  <!-- Card content -->
+<div class="card card-cascade pt-5">
+
   <div class="card-body card-body-cascade text-center">
-
-    <!-- Title -->
-    <h4 class="card-title"><strong>Billy Coleman</strong></h4>
-    <!-- Subtitle -->
+  <div class="repos" *ngFor="let x of repos">
+    <h4 class="card-title"><strong>REPO NAME: {{x.name}}</strong></h4>
+    
     <h6 class="font-weight-bold indigo-text py-2">Web developer</h6>
-    <!-- Text -->
-    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, ex, recusandae.
-      Facere modi sunt, quod quibusdam.
-    </p>
+    
+     <p class="font-weight-bold indigo-text py-2">DESCRIPTION: {{x.description}}</p>
 
-    <!-- Facebook -->
-    <a type="button" class="btn-floating btn-small btn-fb"><i class="fab fa-facebook-f"></i></a>
-    <!-- Twitter -->
-    <a type="button" class="btn-floating btn-small btn-tw"><i class="fab fa-twitter"></i></a>
-    <!-- Google + -->
-    <a type="button" class="btn-floating btn-small btn-dribbble"><i class="fab fa-dribbble"></i></a>
-
-  </div>
-
-  <!-- Card footer -->
   <div class="card-footer text-muted text-center">
-    2 days ago
+    <p>DATE CREATED: {{x.created_at}}</p>
+  </div>
+  </div>
   </div>
 
 </div>
-<!-- Card Regular -->
