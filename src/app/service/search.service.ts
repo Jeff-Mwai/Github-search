@@ -9,14 +9,12 @@ export class SearchService {
 
   constructor(private httpClient: HttpClient) { }
 
-  getInfo () {
-  return this.httpClient.get('https://api.github.com/users/Jeff-Mwai/repos')
+  getInfo (x) {
+  return this.httpClient.get('https://api.github.com/users/'+ x+'/repos?access_token=' + environment.gitApiKey)
   }
 
-  getUsers () {
-  return this.httpClient.get('https://api.github.com/users/Jeff-Mwai')
-  }
-  searchUsers () {
-  return this.httpClient.get('')
+  getUsers (x) {
+  console.log(x);
+  return this.httpClient.get('https://api.github.com/users/'+x+'?access_token=' + environment.gitApiKey)
   }
 }

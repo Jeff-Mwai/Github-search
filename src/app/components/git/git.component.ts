@@ -9,18 +9,25 @@ import { SearchService } from 'src/app/service/search.service';
 export class GitComponent implements OnInit {
   users: any[] = [];
   repos: any[] = [];
+  userName: string;
+  search: string;
 
-  constructor(private userService: SearchService) { }
+  constructor(private userService: SearchService) {
+    this.userName = 'Jeff-Mwai'
+  }
 
   ngOnInit(): void {
-    this.userService.getInfo().subscribe((response: any) => {
+    this.userService.getInfo(this.userName).subscribe((response: any) => {
       this.repos = response;
-      console.log(response);
 
     });
-    this.userService.getUsers().subscribe((response: any) => {
+    this.userService.getUsers(this.userName).subscribe((response: any) => {
       this.users = response;
-      console.log(response);
     });
+
+  }
+  onSearch() {
+    this.userName = this.search
+    this.ngOnInit()
   }
 }
