@@ -1,11 +1,5 @@
 <app-navbar></app-navbar>
-<form class="form-inline mt-5 text-center">
-  <div class="form-group mx-sm-3 mb-2">
-    <label for="inputPassword2" class="sr-only">Password</label>
-    <input [(ngModel)]="search" type="text" class="form-control" name="inputPassword2" placeholder="Enter User Name">
-  </div>
-  <button (click)="onSearch()" class="btn btn-primary mb-2">Search</button>
-</form>
+
 
 <div class="row mb-5">
   <div class="col-md-6">
@@ -48,20 +42,20 @@
 
 
 
-<div class="card card-cascade pt-5 mx-5">
+<div class="card card-cascade mx-5">
 
   <div class="card-body card-body-cascade text-center">
 
     <div class="repos" *ngFor="let x of repos">
 
-      <h6 class="card-title"><strong>Repository Name: {{x.name}}</strong></h6>
+      <h5 class="card-title"><strong>Repository Name: {{x.name}}</strong></h5>
 
-      <p class="indigo-text py-2">Description:<br> {{x.description}}</p>
+      <p class="indigo-text py-2"><strong>Description:</strong><br> {{x.description}}</p>
 
-      <p class="indigo-text py-2">Languages:<br> {{x.language}}</p>
+      <p class="indigo-text py-2"><strong>Language:</strong> {{x.language}}</p>
 
-        <p>Date Created: {{x.created_at | date}}</p>
-        <hr class="mt-5">
+        <p><strong>Date Created:</strong> {{x.created_at | date}}</p>
+        <hr class="font-weight-bold mt-5">
       
     </div>
 
