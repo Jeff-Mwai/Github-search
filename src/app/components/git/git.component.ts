@@ -23,6 +23,8 @@ export class GitComponent implements OnInit {
     });
     this.userService.getUsers(this.userName).subscribe((response: any) => {
       this.users = response;
+      console.log(response);
+
     });
 
   }

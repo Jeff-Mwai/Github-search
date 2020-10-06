@@ -14,7 +14,6 @@ export class SearchService {
   }
 
   getUsers (x) {
-  console.log(x);
   return this.httpClient.get('https://api.github.com/users/'+x+'?access_token=' + environment.gitApiKey)
   }
 }
