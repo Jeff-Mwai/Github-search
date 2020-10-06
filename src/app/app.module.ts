@@ -9,13 +9,15 @@ import { from } from 'rxjs';
 import { GitComponent } from './components/git/git.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { TableComponent } from './components/table/table.component';
+import { DateCountPipe } from './date-count.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     GitComponent,
     NavbarComponent,
-    TableComponent
+    TableComponent,
+    DateCountPipe
   ],
   imports: [
     BrowserModule,
