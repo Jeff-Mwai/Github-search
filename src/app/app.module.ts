@@ -8,12 +8,14 @@ import { AppComponent } from './app.component';
 import { from } from 'rxjs'; 
 import { GitComponent } from './components/git/git.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { TableComponent } from './components/table/table.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GitComponent,
-    NavbarComponent
+    NavbarComponent,
+    TableComponent
   ],
   imports: [
     BrowserModule,
