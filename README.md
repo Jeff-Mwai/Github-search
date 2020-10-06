@@ -1,5 +1,5 @@
 # Git-Search App
-#### September 6th 2020
+#### October 6th 2020
 #### By **Jeffrey Mwai**
 
 ## Description
