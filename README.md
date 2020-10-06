@@ -1,27 +1,40 @@
-# GithubSearch
+# Git-Search App
+#### September 6th 2020
+#### By **Jeffrey Mwai**
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.2.
+## Description
+- Git-Search is an application uses an API to get github information of other people. One enables one to type his or her username, and it displays information such as the repositories, followers, avatar_url and date created.
 
-## Development server
+## Behaviour Driven Development(BDD)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+| Input                        | Ouput                                                                                            |
+|--------------------------    |----------------------------------------------------------------------------------------------    |
+| A search button is provided for the user to input his or her details     | The users repository details are displayed.                  |
 
-## Code scaffolding
+## Setup/Installation requirements
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Clone  or download and unzip the repository from github, [https://github.com/Jeff-Mwai/Github-search](https://github.com/Jeff-Mwai/Github-search.git).
+- If you have git Use this command `git clone *` to clone the project.
+- Run ng serve from your terminal
 
-## Build
+## Live Demo
+To view the page click on the link below
+* [https://jeff-mwai.github.io/Github-search.io/.](*)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Figma Link
+* [](*)
 
-## Running unit tests
+## Technologies Used
+- Angular CLI
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Known Bugs
+- The application does not have any known bugs currently.
 
-## Running end-to-end tests
+## Support and Contact Details
+- For any comments,suggestions,feedback or inquiries, contact me via email: `jeffmwai3@gmail.com`
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+### License
 
-## Further help
+* [MIT] (c) 2020 **Jeffrey Mwai** 
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
