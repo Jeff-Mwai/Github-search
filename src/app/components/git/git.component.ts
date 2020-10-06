@@ -7,7 +7,7 @@ import { SearchService } from 'src/app/service/search.service';
   styleUrls: ['./git.component.css']
 })
 export class GitComponent implements OnInit {
-  users: any[] = [];
+  users: any = [];
   repos: any[] = [];
   userName: string;
   search: string;

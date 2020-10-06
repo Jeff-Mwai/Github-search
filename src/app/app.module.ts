@@ -8,7 +8,6 @@ import { AppComponent } from './app.component';
 import { from } from 'rxjs'; 
 import { GitComponent } from './components/git/git.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { TableComponent } from './components/table/table.component';
 import { DateCountPipe } from './date-count.pipe';
 
 @NgModule({
@@ -16,7 +15,6 @@ import { DateCountPipe } from './date-count.pipe';
     AppComponent,
     GitComponent,
     NavbarComponent,
-    TableComponent,
     DateCountPipe
   ],
   imports: [
